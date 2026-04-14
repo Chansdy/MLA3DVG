@@ -2,9 +2,8 @@
 
 
 ---
- we propose **MLA3DVG**, a dual-modality framework for **3D visual grounding** that explicitly models and aligns multi-level semantics across visual and textual modalities. Specifically, a **Multi-Level Semantic Decomposition (MLSD) module** decomposes both textual and visual inputs into scene-, attribute-, and spatial-level representations, capturing fine-grained geometric features for richer spatial understanding. These representations are subsequently integrated through a **Multi-Level Semantic Alignment (MLSA) mechanism**, which enables fine-grained, level-wise cross-modal alignment. 
+ we propose **MLA3DVG**, a dual-modality framework for **Monocular 3D visual grounding** that infers object locations in 3D space using only RGB inputs and language description. We explicitly models and aligns multi-level semantics across visual and textual modalities. Specifically, we decomposes both textual and visual inputs into scene-, attribute-, and spatial-level representations, capturing fine-grained geometric features for richer spatial understanding. These representations are subsequently integrated through a **Multi-Level Semantic Alignment (MLSA) mechanism**, which enables fine-grained, level-wise cross-modal alignment. 
 
-Furthermore, we introduce a **Semantic-Guided Grounding Decoder (SGGD)** with dual-modality supervision, which enhances geometry-aware reasoning by reconstructing masked spatial expressions within the textual domain. Extensive experiments on the Mono3DRefer benchmark demonstrate that Mono3DVG achieves state-of-the-art performance, with notable improvements in challenging scenarios involving **long-range targets** and **multiple similar objects**.
 
 <p align="center">
   <img src="./assets/intro.png" width="100%" alt="Compare">
