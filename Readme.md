@@ -2,8 +2,9 @@
 
 
 ---
+ we propose **MLA3DVG**, a dual-modality framework for **3D visual grounding** that explicitly models and aligns multi-level semantics across visual and textual modalities. Specifically, a **Multi-Level Semantic Decomposition (MLSD) module** decomposes both textual and visual inputs into scene-, attribute-, and spatial-level representations, capturing fine-grained geometric features for richer spatial understanding. These representations are subsequently integrated through a **Multi-Level Semantic Alignment (MLSA) mechanism**, which enables fine-grained, level-wise cross-modal alignment. 
 
-We introduce **Loc3R-VLM**, a novel framework that equips 2D VLMs with advanced 3D spatial understanding capabilities from video. Inspired by human cognition, it builds an internal cognitive map of the global environment while explicitly modeling an agent's position and orientation. By jointly capturing global layout and egocentric state, the model excels at two core tasks: **language-driven localization** and **viewpoint-aware 3D reasoning**.
+Furthermore, we introduce a **Semantic-Guided Grounding Decoder (SGGD)** with dual-modality supervision, which enhances geometry-aware reasoning by reconstructing masked spatial expressions within the textual domain. Extensive experiments on the Mono3DRefer benchmark demonstrate that Mono3DVG achieves state-of-the-art performance, with notable improvements in challenging scenarios involving **long-range targets** and **multiple similar objects**.
 
 <p align="center">
   <img src="./assets/intro.png" width="100%" alt="Compare">
@@ -14,13 +15,13 @@ We introduce **Loc3R-VLM**, a novel framework that equips 2D VLMs with advanced 
 
 ## 🚧 Code Release
 
-⌛ **We are currently preparing the codebase for release. Stay tuned!**
+⌛ **We've released some key code, and will be adding tutorials later. Stay tuned!**
 
 ---
 
 ## 💡 Key Features
 
-* **Layout Reconstruction:** Reconstructs the 3D spatial layout from sequential video frames.
-* **Localization:** Determines the agent's coordinates and orientation based on natural language descriptions (e.g., *"I am facing the window with a blue cube to my right"*).
-* **3D Reasoning:** Answers complex navigation or spatial questions by combining localized state with the global map.
+* **Monocular 3D Visual Grouding:**  Infer object locations in 3D space using only RGB inputs and language description.
+* **Multi-level Semantic Alignment:** We design multi-level semantic decomposition and alignment modules that explicitly model scene-, attribute-, and spatial-level semantics across textual and visual modalities, enabling layer-level alignment for global context and token-level alignment for key attributes and spatial relations.
+* **Notable improvements:**  notable improvements in challenging scenarios involving long-range targets and multiple similar objects.
 
