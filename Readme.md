@@ -6,7 +6,10 @@
 We introduce **Loc3R-VLM**, a novel framework that equips 2D VLMs with advanced 3D spatial understanding capabilities from video. Inspired by human cognition, it builds an internal cognitive map of the global environment while explicitly modeling an agent's position and orientation. By jointly capturing global layout and egocentric state, the model excels at two core tasks: **language-driven localization** and **viewpoint-aware 3D reasoning**.
 
 <p align="center">
-  <img src="https://microsoft.github.io/Loc3R-VLM/static/images/teaser.png" width="100%" alt="MLA3DVG Overview">
+  <img src="./assets/intro.png" width="100%" alt="Compare">
+</p>
+<p align="center">
+  <img src="./assets/overview.png" width="100%" alt="MLA3DVG Overview">
 </p>
 
 ## 🚧 Code Release
